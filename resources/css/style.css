@@ -1,0 +1,43 @@
+/*Website logo*/
+.logo{
+	width:70px;
+	height:70px;
+	padding: 10px;
+}
+/*Homepage Header*/
+.home_header{
+	display: flex;
+	align-items: center;
+	margin: 0 -10px;
+	justify-content: space-between;
+}
+
+/*Login and Register container*/
+.log_nav{
+	float:right;
+	padding: 10px;
+}
+
+/*Site logo*/
+.site_logo{
+	display: flex;
+	align-items: center;
+}
+
+/*Register Button*/
+.register{
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #f1f1f1;
+	color: black;
+}
+
+/*Login Button*/
+.login{
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #04AA6D;
+	color: white;
+}
