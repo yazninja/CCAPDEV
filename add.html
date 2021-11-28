@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>MC01 || Expense Tracker</title>
+		<link rel="stylesheet" type="text/css" media="all" href="resources/css/style.css">
+	</head>
+	
+	<script>
+		
+	</script>
+	
+	<body>
+		<div class="home_header">
+			<div class="site_logo">
+				<img src = "resources/expensetracker.jpg" alt="Expense Tracker Logo" class="logo">
+				Expense Tracker
+			</div>
+			
+			<div class="log_nav">
+				<a class="register" href ="reg_page.html">REGISTER</a>
+				<a class="login" href ="login_page.html">LOG IN</a>
+			</div>	
+		</div>
+        <div>
+            <form action="#" method="post">
+                <div class="add_form">
+                    <label for="cars">Presets:</label>
+                    <select name="presets" id="presets">
+                        <option value="mSalary">Add Monthly Salary</option>
+                        <option value="aSalary">Add Annual Salary</option>
+                        <option value="dSalary">One-time Income</option>
+                    </select>
+                    <br>
+                    <label for="amount">Amount:</label>
+                    <input type="number" name="amount" id="amount" placeholder="Amount" required>
+                    <label for="repeat">Repeat:</label>
+                    <select name="repeat" id="repeat">
+                        <option value="0">Never</option>
+                        <option value="1">Daily</option>
+                        <option value="2">Weekly</option>
+                        <option value="3">Monthly</option>
+                        <option value="4">Yearly</option>
+                    </select>
+                    <br>
+                    <label for="date">Start Date:</label>
+                    <input type="date" name="sDate" id="sDate">
+                    <br>
+                    <label for="date">End Date:</label>
+                    <input type="date" name="eDate" id="eDate">
+                    <br>
+                    <input type="submit" name="submit" value="Add Income Data">
+                </div>
+            </form>        
+        </div>
+	</body>
+
+
+
+
+</html>
