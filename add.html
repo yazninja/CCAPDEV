@@ -2,13 +2,11 @@
 	<head>
 		<title>MC01 || Expense Tracker</title>
 		<link rel="stylesheet" type="text/css" media="all" href="resources/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
 	</head>
-	
-	<script>
-		
-	</script>
-	
 	<body>
+        <script src="resources/js/addpage.js"></script>
 		<div class="home_header">
 			<div class="site_logo">
 				<img src = "resources/expensetracker.jpg" alt="Expense Tracker Logo" class="logo">
@@ -22,35 +20,87 @@
 		</div>
         <div>
             <form action="#" method="post">
-                <div class="add_form">
-                    <label for="cars">Presets:</label>
-                    <select name="presets" id="presets">
+                <div class="title">
+                    <input type="text" name="title" placeholder="Title" required>
+                </div>
+                <div class="add_income">
+                    <label for="iPresets">Presets:</label>
+                    <select name="iPresets" class="iPresets">
                         <option value="mSalary">Add Monthly Salary</option>
                         <option value="aSalary">Add Annual Salary</option>
                         <option value="dSalary">One-time Income</option>
+                        <option value="custom">Custom</option>
                     </select>
                     <br>
                     <label for="amount">Amount:</label>
-                    <input type="number" name="amount" id="amount" placeholder="Amount" required>
+                    <input type="number" name="amount" class="amount" placeholder="Amount" required>
                     <label for="repeat">Repeat:</label>
-                    <select name="repeat" id="repeat">
+                    <select name="repeat" class="repeat">
                         <option value="0">Never</option>
                         <option value="1">Daily</option>
                         <option value="2">Weekly</option>
-                        <option value="3">Monthly</option>
+                        <option value="3" selected>Monthly</option>
                         <option value="4">Yearly</option>
                     </select>
                     <br>
-                    <label for="date">Start Date:</label>
-                    <input type="date" name="sDate" id="sDate">
+                    <label for="sdate">Start Date:</label>
+                    <input type="date" name="sDate" class="sDate">
                     <br>
-                    <label for="date">End Date:</label>
-                    <input type="date" name="eDate" id="eDate">
+                    <label for="edate">End Date:</label>
+                    <input type="date" name="eDate" class="eDate">
                     <br>
                     <input type="submit" name="submit" value="Add Income Data">
                 </div>
+
+
+                <div class="add_expense">
+                    <label for="ePresets">Presets:</label>
+                    <select name="ePresets" class="ePresets">
+                        <option value="mExpense">Add Monthly Expense</option>
+                        <option value="aExpense">Add Annual Expense</option>
+                        <option value="dExpense">One-time Expense</option>
+                        <option value="custom">Custom</option>
+                    </select>
+
+                    <br>
+
+                    <label for="amount">Amount:</label>
+                    <input type="number" name="amount" class="amount" placeholder="Amount" required>
+                    
+                    <label for="repeat">Repeat:</label>
+                    <select name="repeat" class="repeat">
+                        <option value="0">Never</option>
+                        <option value="1">Daily</option>
+                        <option value="2">Weekly</option>
+                        <option value="3" selected>Monthly</option>
+                        <option value="4">Yearly</option>
+                    </select>
+                    
+                    <br>
+                    
+                    <label for="catergory">Catergory:</label>
+                    <select name="catergory" class="catergory">
+                        <option value="0">Food</option>
+                        <option value="1">Transportation</option>
+                        <option value="2">Entertainment</option>
+                        <option value="3">Health</option>
+                        <option value="4">Other</option>
+                    <br>
+                    <label for="custom_category">Custom Category:</label>
+                    <input type="text" name="custom_category" class="custom_category" placeholder="Custom Catergory">
+                    <br>
+
+                    <label for="sdate">Start Date:</label>
+                    <input type="date" name="sDate" class="sDate">
+                    <br>
+                    <label for="edate">End Date:</label>
+                    <input type="date" name="eDate" class="eDate">
+                    <br>
+                    <input type="submit" name="submit" value="Add Expense Data">
+                </div>
             </form>        
         </div>
+        
 	</body>
 
 
