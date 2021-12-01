@@ -48,11 +48,10 @@ td {
 .side-menu {
     position: fixed;
     background: #04AA6D;
-    width: 18vw;
+    width: 20vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    z-index: 2;
 }
 
 .side-menu .money-tracker {
@@ -74,48 +73,37 @@ td {
     background: white;
     color: #04AA6D;
 }
-.side-menu li.active{
-    background: white;
-    color: #04AA6D;
-}
-.side-menu .user{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    height: 100px;
-    bottom:5%;
-    left:5%;
-    width:90%;
-}
-.side-menu .user img {
-  width: 100px;
-  height: 100px;
-}
-.side-menu .user .img-case {
-  position: relative;
-  width: 50px;
-  height: 50px;
-}
-.side-menu .user h1{
-  display: block;
-  position: absolute;
-  right: 50%;
-  top: 60%;
-}
 
 .container {
     position: absolute;
     right: 0;
-    width: 82vw;
+    width: 80vw;
     height: 100vh;
     background: #f1f1f1;
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
 
 .container .header .nav .user {
     flex: 1;
-    right:0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,7 +133,6 @@ td {
     margin-top: 10vh;
     min-height: 90vh;
     background: #f1f1f1;
-    margin: 2% 0 0 2%;
 }
 
 .container .content .cards {
@@ -222,7 +209,6 @@ td {
         padding: 8px 38px;
         border: 2px solid white;
     }
-    
 }
 
 @media screen and (max-width: 536px) {
@@ -262,10 +248,6 @@ html {
     height: 52rem;
     background-color: #222227;
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   
 .month {
