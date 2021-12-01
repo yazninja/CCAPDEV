@@ -1,29 +1,38 @@
 <html>
-	<head>
-		<title>MC01 || Expense Tracker</title>
-		<link rel="stylesheet" type="text/css" media="all" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" media="all" href="resources/css/formstyle.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="resources/js/jquery.maskMoney.min.js"></script>
-	</head>
-	<body>
-        <script src="resources/js/addpage.js"></script>
-        <!-- Title Bar -->
-		<div class="home_header">
-			<div class="site_logo">
-				<img src = "resources/expensetracker.jpg" alt="Expense Tracker Logo" class="logo">
-				Expense Tracker
-			</div>
-			
-			<div class="log_nav">
-				<a class="register" href ="reg_page.html">REGISTER</a>
-				<a class="login" href ="login_page.html">LOG IN</a>
-			</div>	
-		</div>
-        <!-- End of Title Bar -->
 
-        <!-- Content -->
-        <div class="container"> 
+<head>
+    <title>MC01 || Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" media="all" href="resources/css/style2.css">
+    <link rel="stylesheet" type="text/css" media="all" href="resources/css/formstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="resources/js/jquery.maskMoney.min.js"></script>
+</head>
+
+<body>
+    <script src="resources/js/addpage.js"></script>
+    <script src="resources/js/script.js"></script>
+    <div class="side-menu">
+        <div class="money-tracker">
+            <h1>PesoTrack</h1>
+        </div>
+        <ul>
+            <li class="home "><img src="resources/img/dashboard (2).png" alt="">&nbsp;<span>Dashboard</span> </li>
+            <li class="account"><img src="resources/img/reading-book (1).png" alt="">&nbsp;<span>Account</span> </li>
+            <li class="cal"><img src="resources/img/teacher2.png" alt="">&nbsp;<span>Calendar</span> </li>
+            <li class="add active"><img src="resources/img/payment.png" alt="">&nbsp;<span>Add Expense</span> </li>
+            <li class="remove"><img src="resources/img/payment.png" alt="">&nbsp;<span>Remove Expense</span> </li>
+            <li class="settings"><img src="resources/img/settings.png" alt="">&nbsp;<span>Settings</span> </li>
+        </ul>
+        <div class="user">
+            <div class="img-case">
+                <img src="resources/img/user.png" alt="User Image">
+            </div>
+            <h1>Sal</h1>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="container">
+        <div class="form_container">
             <form action="#" method="post">
                 <div class="title">
                     <input type="text" name="title" placeholder="Title" required>
@@ -73,7 +82,7 @@
                     </div>
                     <div class="button-container">
                         <button type="button" class="button"><span>Add Income Data</span></button>
-                      </div>
+                    </div>
                 </div>
                 <!-- End of Income Tab -->
                 <!-- Expense Tab -->
@@ -90,7 +99,7 @@
 
                     <label for="amount">Amount:</label>
                     <input type="number" name="amount" class="amount" placeholder="Amount" required>
-                    
+
                     <label for="repeat">Repeat:</label>
                     <select name="repeat" class="repeat">
                         <option value="0">Never</option>
@@ -99,9 +108,9 @@
                         <option value="3" selected>Monthly</option>
                         <option value="4">Yearly</option>
                     </select>
-                    
+
                     <br>
-                    
+
                     <label for="catergory">Catergory:</label>
                     <select name="catergory" class="catergory">
                         <option value="0">Food</option>
@@ -109,27 +118,29 @@
                         <option value="2">Entertainment</option>
                         <option value="3">Health</option>
                         <option value="4">Other</option>
-                    <br>
-                    <label for="custom_category">Custom Category:</label>
-                    <input type="text" name="custom_category" class="custom_category" placeholder="Custom Catergory">
-                    <br>
+                        <br>
+                        <label for="custom_category">Custom Category:</label>
+                        <input type="text" name="custom_category" class="custom_category"
+                            placeholder="Custom Catergory">
+                        <br>
 
-                    <label for="sdate">Start Date:</label>
-                    <input type="date" name="sDate" class="sDate">
-                    <br>
-                    <label for="edate">End Date:</label>
-                    <input type="date" name="eDate" class="eDate">
-                    <br>
-                    <input type="submit" name="submit" value="Add Expense Data">
+                        <label for="sdate">Start Date:</label>
+                        <input type="date" name="sDate" class="sDate">
+                        <br>
+                        <label for="edate">End Date:</label>
+                        <input type="date" name="eDate" class="eDate">
+                        <br>
+                        <input type="submit" name="submit" value="Add Expense Data">
                 </div>
-            </form>        
+            </form>
         </div>
-        <script>
-            $(function() {
-              $('.amount').maskMoney({prefix:'PHP '});
-            })
-          </script>
-	</body>
+    </div>
+    <script>
+        $(function () {
+            $('.amount').maskMoney({ prefix: 'PHP ' });
+        })
+    </script>
+</body>
 
 
 

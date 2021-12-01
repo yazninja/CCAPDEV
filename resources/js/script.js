@@ -7,4 +7,8 @@ $(document).ready(function(){
         location.assign("dashboard.html");
         console.log("dashboard");
     });
+    $('.add').click(function(){
+        location.assign("add.html");
+        console.log("add");
+    });
 });
