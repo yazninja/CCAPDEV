@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.add_income').fadeOut();
+    $('.add_expense').fadeOut();
     $('label[for=custom_category]').fadeOut();
     $('.custom_category').fadeOut();
     $(".iPresets").change(function(){
