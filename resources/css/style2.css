@@ -166,6 +166,12 @@ td {
     justify-content: space-around;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.container .content .cards .card:hover {
+  background: #efffef;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 22px 0 rgba(0, 0, 0, 0.29);
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
 
 .container .content .content-2 {
     min-height: 60vh;

@@ -11,4 +11,12 @@ $(document).ready(function(){
         location.assign("add.html");
         console.log("add");
     });
+    $('.side-menu li').mouseenter(function(){
+        $(this).find('img')[0].src = $(this).find('img')[0].src.replace(/white/, 'green');
+    });
+    $('.side-menu li').mouseleave(function(){
+        $(this).find('img')[0].src = $(this).find('img')[0].src.replace(/green/, 'white');
+        $('.side-menu li.active').find('img')[0].src = $('.side-menu li.active').find('img')[0].src.replace(/white/, 'green');
+    });
+    $('.side-menu li.active').find('img')[0].src = $('.side-menu li.active').find('img')[0].src.replace(/white/, 'green');
 });
