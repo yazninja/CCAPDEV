@@ -88,19 +88,16 @@ td {
     width:90%;
 }
 .side-menu .user img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 }
 .side-menu .user .img-case {
   position: relative;
-  width: 50px;
-  height: 50px;
 }
 .side-menu .user h1{
   display: block;
-  position: absolute;
-  right: 50%;
-  top: 60%;
+  width:60%;
+  text-align: center;
 }
 
 .container {
