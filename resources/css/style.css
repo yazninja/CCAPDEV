@@ -80,3 +80,20 @@ input[type=submit]{
 	background-color: #04AA6D;
 	color: white;
 }
+
+/*Side poster*/
+.float_slogan{
+	padding: 20px;
+}
+
+.flt_chld_content1{
+	width:50%;
+	float:left;
+	position: sticky;
+}
+
+.flt_buttons{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
