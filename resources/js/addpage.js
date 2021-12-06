@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('.add_expense').fadeOut();
-    $('label[for=custom_category]').fadeOut();
-    $('.custom_category').fadeOut();
+    $('.add_expense').hide();
+    $('label[for=custom_category]').hide();
+    $('.custom_category').hide();
     $(".iPresets").change(function(){
         let today = new Date().toISOString().substr(0, 10);
         $("label[for=sdate]").text("Start Date:");
@@ -62,7 +62,7 @@ $(document).ready(function(){
             $("label[for=sdate]").text("Date:");
         }
     });
-    $('category').change(function(){
+    $('.category').change(function(){
     if($('.category').val() == "custom"){
         $('label[for=custom_category]').fadeIn();
         $('.custom_category').fadeIn();
@@ -72,4 +72,21 @@ $(document).ready(function(){
         $('.custom_category').fadeOut();
     }
     });
+    $('.inc').click(function(){
+        $('.inc').addClass('activetab');
+        $('.exp').removeClass('activetab');
+        $('.add_expense').hide();
+        $('label[for=custom_category]').hide();
+        $('.custom_category').hide();
+        $('.add_income').show();
+    });
+    $('.exp').click(function(){
+        $('.exp').addClass('activetab');
+        $('.inc').removeClass('activetab');
+        $('.add_income').hide();
+        $('.add_expense').show();
+        $('label[for=custom_category]').show();
+        $('.custom_category').show();
+    });
+
 });

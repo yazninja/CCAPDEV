@@ -1,11 +1,12 @@
 .form_container {
   position: relative;
-  max-width: 40rem;
+  max-width: 45rem;
   margin: 5rem auto;
   background: #fff;
   width: 100%;
   padding: 3rem 5rem 0;
-  border-radius: 1px;
+  border-radius: 10px;
+  
 }
 .form_container::before {
   content: '';
@@ -14,6 +15,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 10px;
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
@@ -41,8 +43,8 @@ fieldset {
 .form-radio,
 .form_group {
   position: relative;
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
+  margin-top: 3.25rem;
+  margin-bottom: 3.25rem;
 }
 
 .form-inline > .form_group,
@@ -55,7 +57,7 @@ fieldset {
   margin-top: 0.125rem;
   margin-left: 0.125rem;
   color: #b3b3b3;
-  font-size: 0.8rem;
+  font-size: 1.8rem;
 }
 .checkbox .form-help, .form-radio .form-help, .form_group .form-help {
   position: absolute;
@@ -71,19 +73,19 @@ fieldset {
 }
 
 .form_group input {
-  height: 1.9rem;
+  height: 3.9rem;
 }
 .form_group textarea {
   resize: none;
 }
 .form_group select {
   width: 100%;
-  font-size: 1rem;
-  height: 1.6rem;
+  font-size: 2rem;
+  height: 3.6rem;
   padding: 0.125rem 0.125rem 0.0625rem;
   background: none;
   border: none;
-  line-height: 1.6;
+  line-height: 2.6;
   box-shadow: none;
 }
 .form_group .control_label {
@@ -93,7 +95,7 @@ fieldset {
   padding-left: 0.125rem;
   z-index: 1;
   color: #b3b3b3;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: normal;
   -webkit-transition: all 0.28s ease;
   transition: all 0.28s ease;
@@ -110,7 +112,7 @@ fieldset {
   left: 50%;
   bottom: -0.0625rem;
   position: absolute;
-  background: #337ab7;
+  background: #04AA6D;
   -webkit-transition: left 0.28s ease, width 0.28s ease;
   transition: left 0.28s ease, width 0.28s ease;
   z-index: 2;
@@ -120,10 +122,10 @@ fieldset {
   display: block;
   background: none;
   padding: 0.125rem 0.125rem 0.0625rem;
-  font-size: 1rem;
+  font-size: 2rem;
   border-width: 0;
   border-color: transparent;
-  line-height: 1.9;
+  line-height: 2.9;
   width: 100%;
   color: transparent;
   -webkit-transition: all 0.28s ease;
@@ -131,7 +133,7 @@ fieldset {
   box-shadow: none;
 }
 .form_group input[type="file"] {
-  line-height: 1;
+  line-height: 2;
 }
 .form_group input[type="file"] ~ .bar {
   display: none;
@@ -156,9 +158,9 @@ fieldset {
 .form_group textarea:valid ~ .control_label,
 .form_group textarea.form-file ~ .control_label,
 .form_group textarea.has-value ~ .control_label {
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   color: gray;
-  top: -1rem;
+  top: -1.5rem;
   left: 0;
 }
 .form_group select:focus,
@@ -169,7 +171,7 @@ fieldset {
 .form_group select:focus ~ .control_label,
 .form_group input:focus ~ .control_label,
 .form_group textarea:focus ~ .control_label {
-  color: #337ab7;
+  color: #04AA6D;
 }
 .form_group select:focus ~ .bar::before,
 .form_group input:focus ~ .bar::before,
@@ -204,7 +206,7 @@ fieldset {
   left: -0.25rem;
   cursor: pointer;
   display: block;
-  font-size: 1rem;
+  font-size: 2rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -218,7 +220,7 @@ fieldset {
   top: 0;
   margin: 0.25rem;
   width: 1rem;
-  height: 1rem;
+  height: 2rem;
   -webkit-transition: -webkit-transform 0.28s ease;
   transition: -webkit-transform 0.28s ease;
   transition: transform 0.28s ease;
@@ -229,18 +231,18 @@ fieldset {
 .radio .helper::after {
   -webkit-transform: scale(0);
           transform: scale(0);
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #04AA6D;
+  border-color: #04AA6D;
 }
 .radio label:hover .helper {
-  color: #337ab7;
+  color: #04AA6D;
 }
 .radio input:checked ~ .helper::after {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
 }
 .radio input:checked ~ .helper::before {
-  color: #337ab7;
+  color: #04AA6D;
 }
 
 .checkbox {
@@ -253,7 +255,7 @@ fieldset {
   top: 0;
   left: 0;
   width: 1rem;
-  height: 1rem;
+  height: 2rem;
   z-index: 0;
   border: 0.125rem solid currentColor;
   border-radius: 0.0625rem;
@@ -264,7 +266,7 @@ fieldset {
   position: absolute;
   height: 0;
   width: 0.2rem;
-  background-color: #337ab7;
+  background-color: #04AA6D;
   display: block;
   -webkit-transform-origin: left top;
           transform-origin: left top;
@@ -288,10 +290,10 @@ fieldset {
           transform: rotate(-45deg);
 }
 .checkbox label:hover .helper {
-  color: #337ab7;
+  color: #04AA6D;
 }
 .checkbox input:checked ~ .helper {
-  color: #337ab7;
+  color: #04AA6D;
 }
 .checkbox input:checked ~ .helper::after, .checkbox input:checked ~ .helper::before {
   opacity: 1;
@@ -299,10 +301,10 @@ fieldset {
   transition: height 0.28s ease;
 }
 .checkbox input:checked ~ .helper::after {
-  height: 0.5rem;
+  height: 1.5rem;
 }
 .checkbox input:checked ~ .helper::before {
-  height: 1.2rem;
+  height: 2.2rem;
   -webkit-transition-delay: 0.28s;
           transition-delay: 0.28s;
 }
@@ -328,54 +330,56 @@ fieldset {
   width: 100%;
 }
 
-.button {
-  position: relative;
-  background: currentColor;
-  border: 1px solid currentColor;
-  font-size: 1.1rem;
-  color: #4f93ce;
-  margin: 3rem 0;
-  padding: 0.75rem 3rem;
-  cursor: pointer;
-  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
-  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
-  overflow: hidden;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+.submit{
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
-.button span {
-  color: #fff;
-  position: relative;
-  z-index: 1;
-}
-.button::before {
-  content: '';
+.tab{
+  width:100%;
+  height:4rem;
+  left:0;
+  top:0;
   position: absolute;
-  background: #071017;
-  border: 50vh solid #1d4567;
-  width: 30vh;
-  height: 30vh;
-  border-radius: 50%;
-  display: block;
-  top: 50%;
-  left: 50%;
-  z-index: 0;
-  opacity: 1;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
+  border-radius: 10px;
 }
-.button:hover {
-  color: #337ab7;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+.tab button{
+  width:50%;
+  height:100%;
+  float:left;
+  border:none;
+  background-color: #ddd;
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
 }
-.button:active::before, .button:focus::before {
-  -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
-  transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
-  transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
-  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  opacity: 0;
+.tab button.activetab{
+  background-color: #04AA6D;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
-.button:focus {
-  outline: none;
+form input:focus{
+  border:none;
+}
+.title input{
+  width:100%;
+  height:4rem;
+  border:none;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.title input:focus{
+  color: #04AA6D;
+  transition: color 0.3s;
+}
+.title input:hover{
+  color: #04AA6D;
+  transition: color 0.3s;
+}
+.title {
+  width:100%;
+  height:6rem;
+  padding: 1rem;
+  border-bottom: 2px solid #999;
 }
