@@ -11,6 +11,10 @@ $(document).ready(function(){
         location.assign("add.html");
         console.log("add");
     });
+    $('.remove').click(function(){
+        location.assign("remove.html");
+        console.log("remove");
+    });
     $('.signout').click(function(){
         location.assign("index.html");
         console.log("signout");

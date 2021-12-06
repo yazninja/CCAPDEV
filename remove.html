@@ -15,11 +15,11 @@
             <h1>PesoTrack</h1>
         </div>
         <ul>
-            <li class="home active"><img src="resources/img/dashboard_white.png" alt="">&nbsp;<span>Dashboard</span> </li>
+            <li class="home"><img src="resources/img/dashboard_white.png" alt="">&nbsp;<span>Dashboard</span> </li>
             <li class="account"><img src="resources/img/reading-book_white.png" alt="">&nbsp;<span>Account</span> </li>
             <li class="cal"><img src="resources/img/teacher2_white.png" alt="">&nbsp;<span>Calendar</span> </li>
             <li class="add"><img src="resources/img/payment_white.png" alt="">&nbsp;<span>Add Transaction</span> </li>
-            <li class="remove"><img src="resources/img/payment_white.png" alt="">&nbsp;<span>Remove Transaction</span> </li>
+            <li class="remove active"><img src="resources/img/payment_white.png" alt="">&nbsp;<span>Remove Transaction</span> </li>
             <li class="settings"><img src="resources/img/settings_white.png" alt="">&nbsp;<span>Settings</span> </li> 
             <li class="signout"><img src="resources/img/signout_white.png" alt="">&nbsp;<span>Sign Out</span> </li> 
         </ul>
@@ -34,44 +34,35 @@
     <div class="container">
         <div class="transaction_container">
             <div class="expense transaction">
-                <h1>Meralco Bills</h1>
-                <h2>₱2355.55</h2>
-                <label for="sDate">Start Date</label>
-                <input type="date" id="sDate" name="sDate" value="2021-11-01" readonly>
-                <label for="sDate">End Date</label>
-                <input type="date" id="sDate" name="sDate" value="2021-12-01" readonly>
+                <h1>Meralco Bills • ₱2355.55</h1>
+                <h2>Electricity Bills, paid monthly</h2>
+                <button type="delete" class="delete"><span>Delete</span></button>
+                <i class="bar"></i>
             </div>
             <div class="expense transaction">
-                <h1>Dinner @ Shakeys</h1>
-                <h2>₱1280.00</h2>
-                <label for="sDate">Date</label>
-                <input type="date" id="sDate" name="sDate" value="2021-11-15" readonly>
+                <h1>Dinner @ Shakeys • ₱1280.00</h1>
+                <h2>Dinner with friends</h2>
+                <button type="delete" class="delete"><span>Delete</span></button>
+                <i class="bar"></i>
             </div>
             <div class="income transaction">
-                <h1>Salary from Company</h1>
-                <h2>₱32000.55</h2>
-                <label for="sDate">Start Date</label>
-                <input type="date" id="sDate" name="sDate" value="2021-11-01" readonly>
-                <label for="sDate">Start Date</label>
-                <input type="date" id="sDate" name="sDate" value="2021-12-01" readonly>
+                <h1>Salary from Company • ₱32000.55</h1>
+                <h2>Paycheck, monthly pay</h2>
+                <button type="delete" class="delete"><span>Delete</span></button>
+                <i class="bar"></i>
             </div>
             <div class="expense transaction">
-                <h1>Meralco Bills</h1>
-                <h2>₱2355.55</h2>
-                <label for="sDate">Start Date</label>
-                <input type="date" id="sDate" name="sDate" value="2021-11-01" readonly>
-                <label for="sDate">Start Date</label>
-                <input type="date" id="sDate" name="sDate" value="2021-12-01" readonly>
+                <h1>PLDT Telephone + Internet • ₱2355.55</h1>
+                <h2>Monthly Internet and landline bills</h2>
+                <button type="delete" class="delete"><span>Delete</span></button>
+                <i class="bar"></i>
             </div>
-            <div class="expense transaction">
-                <h1>Meralco Bills</h1>
-                <h2>₱2355.55</h2>
-                <label for="sDate">Start Date</label>
-                <input type="date" id="sDate" name="sDate" value="2021-11-01" readonly>
-                <label for="sDate">Start Date</label>
-                <input type="date" id="sDate" name="sDate" value="2021-12-01" readonly>
+            <div class="income transaction">
+                <h1>Sold 2nd hand keyboard • ₱550.00</h1>
+                <h2>Sold thru shopee, buyer will pay via cash</h2>
+                <button type="delete" class="delete"><span>Delete</span></button>
+                <i class="bar"></i>
             </div>
-
         </div>
     </div>
     <script>
