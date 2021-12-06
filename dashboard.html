@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/css/style2.css">
     <title>PesoTrack || Dashboard</title>
+    <!--Inserting another html page-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $.get("converter.html",function(response){ 
+    $("#converter").html(response); 
+    });
+    </script>
 </head>
 <body>
     <script src="resources/js/script.js"></script> 
@@ -41,6 +47,8 @@
                         <img src="resources/img/students.png" alt="">
                     </div>
                 </div>
+
+                <!-- 
                 <div class="card cal">
                     <div class="box">
                         <h3>Calendar</h3>
@@ -64,7 +72,7 @@
                     <div class="icon-case">
                         <img src="resources/img/income.png" alt="">
                     </div>
-                </div>
+                </div> Removed to be changed into another thing-->
                 <!-- Optional -->
                 <div class="card">
                     <div class="box">
@@ -85,6 +93,9 @@
                     </div>
                 </div>                
                 <!-- Till here-->
+                <!-- Calling otherpage-->
+                <div id="converter"></div>
+
             </div>
             <div class="content-2">
                 <div class="recent-payments">
