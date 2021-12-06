@@ -19,6 +19,14 @@ $(document).ready(function(){
         location.assign("index.html");
         console.log("signout");
     });
+    $('.register').click(function(){
+        location.assign("reg_page.html");
+        console.log("register");
+    });
+    $('.conv').click(function(){
+        location.assign("converter.html");
+        console.log("conv");
+    });
     $('.side-menu li').mouseenter(function(){
         $(this).find('img')[0].src = $(this).find('img')[0].src.replace(/white/, 'green');
     });
